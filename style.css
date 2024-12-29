@@ -1,0 +1,27 @@
+* {
+    font-family: Arial;
+    color: white;
+}
+
+h1 {
+    margin: 10px;
+    border: 4px solid;
+    padding: 10px;
+}
+
+body {
+    background-color: black;
+}
+
+#mood-heading {
+    color: rgb(176, 176, 207);
+}
+
+.list-item {
+    font-size: 30px;
+}
+
+.lists .list-child {
+    color:red;
+}
+

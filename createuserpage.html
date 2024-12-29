@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<title>Signin</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="ok.css">
+</head>
+<body>
+<form class="ok">
+  <div class="imgcontainer">
+    <img height="100" width="100" src="D:\109464154_292680878824303_9006597939362334477_n.jpg" >
+  </div>
+
+    <b>Account name:</b>
+    <div class="ac" id="acn">Nguyễn Văn A</div>
+    <br></br>
+    <b>Password</b>
+    <div  class="ac" id="pw">AnhAdeptrai</div>
+<br></br>
+    <b>Email</b>
+    <div  class="ac" id="em">nguyenvanA@gmail.com</div>
+<br></br>
+     <b>Current Level of Study</b>
+    <div  class="ac" id="lvl">High School</div>
+<br></br>
+    <b>List of interested school</b>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <p><b class="tt">EDIT HERE</b></p>
+    <input id="acn1" type="text" placeholder="edit accont name"></input>
+    <input id="pw1" type="text" placeholder="edit password"></input>
+    <input id="email1" type="text" placeholder="edit email"></input>
+    <input id="level1" type="text" placeholder="edit curren level of study"></input>
+    <input type="button" id="btn" value="Save"/>
+    <script language="javascript">
+
+        var button = document.getElementById("btn");
+        var ac = document.getElementById('acn');
+        var pass= document.getElementById('pw');
+        var mail= document.getElementById('em');
+        var level= document.getElementById('lvl');
+        button.onclick = function(){
+                var div1= document.getElementById("acn1").value;
+                var div2= document.getElementById("pw1").value;
+                var div3= document.getElementById("email1").value;
+                var div4= document.getElementById("level1").value;
+                ac.innerHTML = div1;
+                pass.innerHTML = div2;
+                mail.innerHTML = div3;
+                level.innerHTML = div4;
+            };
+
+    </script>
+</form>
+</body>
+</html>
+
+

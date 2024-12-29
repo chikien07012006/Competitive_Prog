@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Example</title>
+    </head>
+    <body>
+        <h2>Thay đổi nội dung của thẻ HTML</h2>
+        <div id="content" style="padding: 20px; background: blue; color: white; margin: 40px 0px;">
+            Đây là nội dung cần thay đổi.
+        </div>
+        <input type="button" id="btn1" value="Xem nội dung 1"/>
+        <input type="button" id="btn2" value="Xem nội dung 2"/>
+        <script language="javascript">
+            // Lấy 2 button và thẻ div
+            var button1 = document.getElementById("btn1");
+            var button2 = document.getElementById("btn2");
+            var div = document.getElementById('content');
+
+            // Thiết lập click cho button 1
+            button1.onclick = function(){
+                div.innerHTML = 'Demo thay đổi nội dung thẻ div bằng Javascript tại Freetuts';
+            };
+
+            // Thiết lập click cho button 2
+            button2.onclick = function(){
+                div.innerHTML = 'Nội dung của thẻ div đã bị thay đổi';
+            };
+
+        </script>
+    </body>
+</html>

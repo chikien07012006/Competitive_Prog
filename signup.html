@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<title>Sign Up</title>
+<head>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+
+</head>
+<body>
+<div class="wr">
+<form>
+    <div class="tt">Sign Up</div>
+    <br></br>
+    <div class="#">
+        <div>
+            <b>Email</b>
+        </div>
+        <input id="email" type="text" placeholder="Email" required>
+    </div>
+    <br></br>
+    <div class="#">
+        <div>
+            <b>Phone number</b>
+        </div>
+        <input id="phone" type="text" placeholder="Phone number" required>
+    </div>
+    <br></br>
+    <div class="#">
+        <div>
+            <b>User name</b>
+        </div>
+        <input id="username" type="text" placeholder="User name" required>
+    </div>
+    <br></br>
+    <div class="#">
+        <div>
+            <b>Password</b>
+        </div>
+        <input id="pw" type="text" placeholder="Password" required>
+    </div>
+    <br></br>
+    <div class="#">
+        <div>
+            <b>Current Level of Study</b>
+        </div>
+        <input id="level" type="text" placeholder="Current Level of Study" required>
+    </div>
+    <br></br>
+        <b>
+            <input type="checkbox" required> I'm not a robot
+        </b>
+    <br></br>
+
+    <button onclick="ok()"> Submit </button>
+
+    <script>
+
+    function ok()
+    {
+    console.log("Email :", document.getElementById("email").value);
+    console.log("Phone number :", document.getElementById("phone").value);
+    console.log("User name :", document.getElementById("username").value);
+    console.log("Password :", document.getElementById("pw").value);
+    console.log("Current Level of Study :", document.getElementById("level").value);
+    }
+
+    </script>
+
+</form>
+</div>
+</body>
+</html>
+
+
